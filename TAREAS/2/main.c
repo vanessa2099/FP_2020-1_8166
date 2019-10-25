@@ -1,18 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int arc, char const *argu[])
+int main(int argc, char const *argu[]){
 
-{
-	int x;
-	scanf("%d",&x);
-	if (x%2==0)
+	int numero;
+	numero=atoi(argu[1]);
+	if (numero%2==0){
 
-		printf("Es un numero par\n");
+		printf("1\n");
+	}
+	else {
 	
-	else
-	
-		printf("Es numero non\n");
-
+		printf("0\n");
+	}
 	return 0;
-}		
+}	
